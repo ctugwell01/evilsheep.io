@@ -84,30 +84,11 @@
     99% { opacity: 1; }
   }
 
-  nav ul {
-    list-style: none;
-    display: flex;
-    gap: 30px;
-  }
+  nav ul { list-style: none; display: flex; gap: 30px; }
+  nav a { color: var(--green); text-decoration: none; font-size: 0.85rem; letter-spacing: 1px; transition: all 0.2s; }
+  nav a:hover { color: var(--sheep); text-shadow: 0 0 10px var(--sheep); }
 
-  nav a {
-    color: var(--green);
-    text-decoration: none;
-    font-size: 0.85rem;
-    letter-spacing: 1px;
-    transition: all 0.2s;
-  }
-
-  nav a:hover {
-    color: var(--sheep);
-    text-shadow: 0 0 10px var(--sheep);
-  }
-
-  .hero {
-    text-align: center;
-    padding: 80px 20px 60px;
-    position: relative;
-  }
+  .hero { text-align: center; padding: 80px 20px 60px; position: relative; }
 
   .hero-badge {
     display: inline-block;
@@ -136,20 +117,8 @@
   }
 
   .hero h1 .accent { color: var(--sheep); text-shadow: 0 0 30px var(--sheep); }
-
-  .hero-sub {
-    font-size: 1rem;
-    color: #4a8a4a;
-    margin-bottom: 10px;
-    letter-spacing: 1px;
-  }
-
-  .tagline {
-    font-size: 1.1rem;
-    color: var(--sheep);
-    margin-bottom: 40px;
-    opacity: 0.9;
-  }
+  .hero-sub { font-size: 1rem; color: #4a8a4a; margin-bottom: 10px; letter-spacing: 1px; }
+  .tagline { font-size: 1.1rem; color: var(--sheep); margin-bottom: 40px; opacity: 0.9; }
 
   .coupon-banner {
     background: linear-gradient(135deg, #0f2a0f, #1a4a0a);
@@ -168,14 +137,7 @@
   }
 
   .coupon-banner p { font-size: 0.85rem; color: #4a8a4a; margin-bottom: 6px; }
-  .coupon-code {
-    font-family: 'Orbitron', monospace;
-    font-size: 2rem;
-    font-weight: 900;
-    color: var(--red);
-    letter-spacing: 4px;
-    text-shadow: 0 0 20px var(--red);
-  }
+  .coupon-code { font-family: 'Orbitron', monospace; font-size: 2rem; font-weight: 900; color: var(--red); letter-spacing: 4px; text-shadow: 0 0 20px var(--red); }
   .coupon-banner .off { font-size: 0.9rem; color: var(--sheep); margin-top: 4px; }
 
   .cta-btn {
@@ -206,11 +168,7 @@
   }
 
   .cta-btn:hover::before { left: 100%; }
-  .cta-btn:hover {
-    background: var(--green);
-    color: var(--bg);
-    box-shadow: 0 0 30px var(--green);
-  }
+  .cta-btn:hover { background: var(--green); color: var(--bg); box-shadow: 0 0 30px var(--green); }
 
   .stats {
     display: flex;
@@ -223,13 +181,7 @@
   }
 
   .stat { text-align: center; }
-  .stat-num {
-    font-family: 'Orbitron', monospace;
-    font-size: 2rem;
-    font-weight: 900;
-    color: var(--sheep);
-    display: block;
-  }
+  .stat-num { font-family: 'Orbitron', monospace; font-size: 2rem; font-weight: 900; color: var(--sheep); display: block; }
   .stat-label { font-size: 0.75rem; color: #4a8a4a; letter-spacing: 1px; }
 
   .section { padding: 70px 40px; max-width: 1200px; margin: 0 auto; }
@@ -251,11 +203,7 @@
     box-shadow: 0 0 10px var(--green);
   }
 
-  .features-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-    gap: 20px;
-  }
+  .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; }
 
   .feature-card {
     background: var(--card);
@@ -275,27 +223,12 @@
     box-shadow: 0 0 10px var(--green);
   }
 
-  .feature-card:hover {
-    border-color: var(--green);
-    transform: translateY(-4px);
-    box-shadow: 0 10px 30px rgba(0,255,65,0.15);
-  }
-
+  .feature-card:hover { border-color: var(--green); transform: translateY(-4px); box-shadow: 0 10px 30px rgba(0,255,65,0.15); }
   .feature-icon { font-size: 2rem; margin-bottom: 12px; }
-  .feature-name {
-    font-family: 'Orbitron', monospace;
-    font-size: 0.9rem;
-    font-weight: 700;
-    margin-bottom: 8px;
-    color: var(--sheep);
-  }
+  .feature-name { font-family: 'Orbitron', monospace; font-size: 0.9rem; font-weight: 700; margin-bottom: 8px; color: var(--sheep); }
   .feature-desc { font-size: 0.8rem; color: #4a8a4a; line-height: 1.5; }
 
-  .pricing-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 24px;
-  }
+  .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
 
   .price-card {
     background: var(--card);
@@ -306,11 +239,7 @@
     transition: all 0.3s;
   }
 
-  .price-card.featured {
-    border-color: var(--green);
-    box-shadow: 0 0 40px rgba(0,255,65,0.2);
-    transform: scale(1.03);
-  }
+  .price-card.featured { border-color: var(--green); box-shadow: 0 0 40px rgba(0,255,65,0.2); transform: scale(1.03); }
 
   .featured-badge {
     position: absolute;
@@ -325,37 +254,11 @@
     white-space: nowrap;
   }
 
-  .price-tier {
-    font-family: 'Orbitron', monospace;
-    font-size: 0.85rem;
-    letter-spacing: 3px;
-    color: #4a8a4a;
-    margin-bottom: 10px;
-  }
-
-  .price-amount {
-    font-family: 'Orbitron', monospace;
-    font-size: 3rem;
-    font-weight: 900;
-    color: var(--sheep);
-    line-height: 1;
-  }
-
+  .price-tier { font-family: 'Orbitron', monospace; font-size: 0.85rem; letter-spacing: 3px; color: #4a8a4a; margin-bottom: 10px; }
+  .price-amount { font-family: 'Orbitron', monospace; font-size: 3rem; font-weight: 900; color: var(--sheep); line-height: 1; }
   .price-period { font-size: 0.75rem; color: #4a8a4a; margin-bottom: 24px; }
-
-  .price-features {
-    list-style: none;
-    margin-bottom: 28px;
-    text-align: left;
-  }
-
-  .price-features li {
-    font-size: 0.8rem;
-    padding: 6px 0;
-    border-bottom: 1px solid var(--border);
-    color: #6aaa6a;
-  }
-
+  .price-features { list-style: none; margin-bottom: 28px; text-align: left; }
+  .price-features li { font-size: 0.8rem; padding: 6px 0; border-bottom: 1px solid var(--border); color: #6aaa6a; }
   .price-features li::before { content: '> '; color: var(--green); }
 
   .buy-btn {
@@ -372,16 +275,9 @@
     transition: all 0.2s;
   }
 
-  .buy-btn:hover, .price-card.featured .buy-btn {
-    background: var(--green);
-    color: var(--bg);
-  }
+  .buy-btn:hover, .price-card.featured .buy-btn { background: var(--green); color: var(--bg); }
 
-  .reviews-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-  }
+  .reviews-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; }
 
   .review-card {
     background: var(--card);
@@ -391,11 +287,7 @@
     transition: all 0.3s;
   }
 
-  .review-card:hover {
-    border-color: var(--border);
-    box-shadow: 0 4px 20px rgba(0,255,65,0.1);
-  }
-
+  .review-card:hover { border-color: var(--border); box-shadow: 0 4px 20px rgba(0,255,65,0.1); }
   .review-stars { color: var(--green); font-size: 1rem; margin-bottom: 12px; letter-spacing: 2px; }
   .review-text { font-size: 0.82rem; color: #6aaa6a; line-height: 1.6; margin-bottom: 16px; font-style: italic; }
   .review-author { font-size: 0.75rem; color: #3a6a3a; }
@@ -411,144 +303,18 @@
     letter-spacing: 0.5px;
   }
 
-  .ticker {
-    background: var(--red);
-    padding: 8px 0;
-    overflow: hidden;
-    white-space: nowrap;
-  }
-
-  .ticker-inner {
-    display: inline-block;
-    animation: ticker 20s linear infinite;
-  }
-
-  .ticker-inner span {
-    color: #fff;
-    font-size: 0.75rem;
-    letter-spacing: 2px;
-    margin-right: 80px;
-  }
+  .ticker { background: var(--red); padding: 8px 0; overflow: hidden; white-space: nowrap; }
+  .ticker-inner { display: inline-block; animation: ticker 20s linear infinite; }
+  .ticker-inner span { color: #fff; font-size: 0.75rem; letter-spacing: 2px; margin-right: 80px; }
 
   @keyframes ticker {
     from { transform: translateX(0); }
     to { transform: translateX(-50%); }
   }
 
-  .audio-card {
-    background: var(--card);
-    border: 1px solid var(--green);
-    padding: 28px 32px;
-    max-width: 750px;
-    margin: 0 auto;
-    box-shadow: 0 0 40px rgba(0,255,65,0.1);
-  }
+  .sheep-divider { text-align: center; padding: 20px; font-size: 1.5rem; opacity: 0.3; letter-spacing: 8px; }
 
-  .audio-top {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-    margin-bottom: 20px;
-  }
-
-  .audio-icon { font-size: 2.2rem; flex-shrink: 0; }
-
-  .audio-title {
-    font-family: 'Orbitron', monospace;
-    font-size: 0.95rem;
-    font-weight: 700;
-    color: var(--sheep);
-    letter-spacing: 1px;
-  }
-
-  .audio-sub {
-    font-size: 0.7rem;
-    color: #3a6a3a;
-    margin-top: 4px;
-    letter-spacing: 1px;
-  }
-
-  .audio-badge {
-    margin-left: auto;
-    background: var(--red);
-    color: #fff;
-    padding: 4px 12px;
-    font-family: 'Orbitron', monospace;
-    font-size: 0.65rem;
-    letter-spacing: 2px;
-    flex-shrink: 0;
-    animation: pulse-red 2s infinite;
-  }
-
-  .audio-player {
-    width: 100%;
-    margin-bottom: 16px;
-    filter: invert(1) hue-rotate(90deg) brightness(0.8);
-    accent-color: var(--green);
-  }
-
-  .audio-caption {
-    font-size: 0.78rem;
-    color: #4a8a4a;
-    font-style: italic;
-    line-height: 1.6;
-  }
-
-  .proof-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 24px;
-  }
-
-  .proof-card {
-    background: var(--card);
-    border: 1px solid var(--border);
-    padding: 20px;
-    transition: all 0.3s;
-  }
-
-  .proof-card:hover {
-    border-color: var(--green);
-    box-shadow: 0 4px 20px rgba(0,255,65,0.12);
-    transform: translateY(-3px);
-  }
-
-  .proof-label {
-    font-size: 0.68rem;
-    color: var(--red);
-    letter-spacing: 2px;
-    margin-bottom: 12px;
-    font-family: 'Orbitron', monospace;
-  }
-
-  .proof-img {
-    width: 100%;
-    display: block;
-    border: 1px solid var(--border);
-    margin-bottom: 14px;
-    image-rendering: crisp-edges;
-    filter: brightness(1.1) contrast(1.05);
-  }
-
-  .proof-caption {
-    font-size: 0.78rem;
-    color: #4a8a4a;
-    line-height: 1.6;
-    font-style: italic;
-  }
-
-  .sheep-divider {
-    text-align: center;
-    padding: 20px;
-    font-size: 1.5rem;
-    opacity: 0.3;
-    letter-spacing: 8px;
-  }
-
-  .glitch {
-    position: relative;
-    animation: glitch-anim 5s infinite;
-  }
+  .glitch { position: relative; animation: glitch-anim 5s infinite; }
 
   @keyframes glitch-anim {
     0%, 90%, 100% { transform: none; text-shadow: 0 0 30px var(--green); }
@@ -557,14 +323,7 @@
     96% { transform: none; text-shadow: 0 0 30px var(--green); }
   }
 
-  footer {
-    text-align: center;
-    padding: 30px;
-    border-top: 1px solid var(--border);
-    font-size: 0.75rem;
-    color: #2a4a2a;
-  }
-
+  footer { text-align: center; padding: 30px; border-top: 1px solid var(--border); font-size: 0.75rem; color: #2a4a2a; }
   footer a { color: #3a6a3a; text-decoration: none; }
 
   .alert-box {
@@ -595,14 +354,9 @@
     pointer-events: none;
   }
 
-  .fivehead-inner {
-    max-width: 1100px;
-    margin: 0 auto;
-  }
+  .fivehead-inner { max-width: 1100px; margin: 0 auto; }
 
   .fivehead-badge {
-    text-align: center;
-    display: inline-block;
     background: var(--green);
     color: var(--bg);
     padding: 5px 20px;
@@ -615,16 +369,8 @@
     margin: 0 auto 30px;
   }
 
-  .fivehead-content {
-    display: flex;
-    gap: 50px;
-    align-items: center;
-  }
-
-  .fivehead-avatar {
-    flex-shrink: 0;
-    text-align: center;
-  }
+  .fivehead-content { display: flex; gap: 50px; align-items: center; }
+  .fivehead-avatar { flex-shrink: 0; text-align: center; }
 
   .avatar-ring {
     width: 160px;
@@ -636,7 +382,6 @@
     align-items: center;
     justify-content: center;
     margin: 0 auto 12px;
-    position: relative;
     animation: spin-ring 8s linear infinite;
     background: radial-gradient(circle, #0a1f0a, #050f05);
   }
@@ -662,33 +407,11 @@
     animation: pulse-red 1.5s infinite;
   }
 
-  .status-dot {
-    font-size: 0.7rem;
-    color: var(--green);
-    letter-spacing: 1px;
-    animation: flicker 3s infinite;
-  }
+  .status-dot { font-size: 0.7rem; color: var(--green); letter-spacing: 1px; animation: flicker 3s infinite; }
 
-  .fivehead-name {
-    font-family: 'Orbitron', monospace;
-    font-size: 3rem;
-    font-weight: 900;
-    line-height: 1;
-    margin-bottom: 8px;
-    text-shadow: 0 0 30px var(--green);
-  }
-
-  .fivehead-name span {
-    color: var(--sheep);
-    text-shadow: 0 0 30px var(--sheep);
-  }
-
-  .fivehead-title {
-    font-size: 0.78rem;
-    color: #4a8a4a;
-    letter-spacing: 1px;
-    margin-bottom: 20px;
-  }
+  .fivehead-name { font-family: 'Orbitron', monospace; font-size: 3rem; font-weight: 900; line-height: 1; margin-bottom: 8px; text-shadow: 0 0 30px var(--green); }
+  .fivehead-name span { color: var(--sheep); text-shadow: 0 0 30px var(--sheep); }
+  .fivehead-title { font-size: 0.78rem; color: #4a8a4a; letter-spacing: 1px; margin-bottom: 20px; }
 
   .fivehead-quote {
     border-left: 3px solid var(--green);
@@ -701,22 +424,9 @@
     box-shadow: -3px 0 20px rgba(0,255,65,0.1);
   }
 
-  .fivehead-stats {
-    display: flex;
-    gap: 30px;
-    margin-bottom: 28px;
-    flex-wrap: wrap;
-  }
-
+  .fivehead-stats { display: flex; gap: 30px; margin-bottom: 28px; flex-wrap: wrap; }
   .fstat { text-align: center; }
-  .fstat-num {
-    font-family: 'Orbitron', monospace;
-    font-size: 1.6rem;
-    font-weight: 900;
-    color: var(--sheep);
-    display: block;
-    text-shadow: 0 0 15px var(--sheep);
-  }
+  .fstat-num { font-family: 'Orbitron', monospace; font-size: 1.6rem; font-weight: 900; color: var(--sheep); display: block; text-shadow: 0 0 15px var(--sheep); }
   .fstat-label { font-size: 0.65rem; color: #3a6a3a; letter-spacing: 1px; }
 
   .watch-btn {
@@ -733,11 +443,7 @@
     animation: pulse-red 2s infinite;
   }
 
-  .watch-btn:hover {
-    background: #ff4444;
-    box-shadow: 0 0 30px rgba(255,32,32,0.6);
-    transform: scale(1.03);
-  }
+  .watch-btn:hover { background: #ff4444; box-shadow: 0 0 30px rgba(255,32,32,0.6); transform: scale(1.03); }
 
   @media (max-width: 600px) {
     .fivehead-content { flex-direction: column; text-align: center; }
@@ -763,10 +469,8 @@
 
   .hero-video {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 100%;
-    height: 100%;
+    top: 50%; left: 50%;
+    width: 100%; height: 100%;
     object-fit: cover;
     transform: translate(-50%, -50%);
     z-index: 0;
@@ -780,20 +484,14 @@
     z-index: 1;
   }
 
-  .hero-content {
-    position: relative;
-    z-index: 2;
-    text-align: center;
-    padding: 20px;
-  }
+  .hero-content { position: relative; z-index: 2; text-align: center; padding: 20px; }
 
   .unmute-btn {
     position: absolute;
-    bottom: 25px;
-    right: 25px;
+    bottom: 25px; right: 25px;
     z-index: 3;
     padding: 14px 22px;
-    background: rgba(0, 0, 0, 0.85);
+    background: rgba(0,0,0,0.85);
     border: 2px solid var(--green);
     color: var(--green);
     font-weight: bold;
@@ -806,12 +504,7 @@
     animation: glow-pulse 2s infinite;
   }
 
-  .unmute-btn:hover {
-    background: var(--green);
-    color: black;
-    box-shadow: 0 0 30px var(--green);
-  }
-
+  .unmute-btn:hover { background: var(--green); color: black; box-shadow: 0 0 30px var(--green); }
 </style>
 </head>
 <body>
@@ -853,13 +546,11 @@
 
 <!-- HERO -->
 <section class="hero video-hero">
-
   <video id="heroVideo" autoplay muted loop playsinline class="hero-video">
     <source src="https://www.dropbox.com/scl/fi/e26mbitq2eeqhylc0t2rj/evilsheep.io.mp4?rlkey=t3npxcuup3rewl7foulmq4bt1&st=jtgxb2vl&dl=1" type="video/mp4">
   </video>
 
   <button id="unmuteBtn" class="unmute-btn">🔊 Enable Sound</button>
-
   <div class="hero-overlay"></div>
 
   <div class="hero-content">
@@ -868,9 +559,7 @@
     <h1 class="glitch">
       SCRIPT ON<br>
       <span class="accent">NAKEDS</span><br>
-      <span style="font-size:0.55em; color:#4a8a4a;">
-        AT SPAWN BEACH!
-      </span>
+      <span style="font-size:0.55em; color:#4a8a4a;">AT SPAWN BEACH!</span>
     </h1>
 
     <p class="hero-sub">Trusted by 47,000+ degenerates worldwide</p>
@@ -886,11 +575,10 @@
 
     <br><br>
 
-    <a href="https://kick.com/5headnn" target="_blank" class="cta-btn">
-      Start Ruining Games Now
-    </a>
+    <a href="https://kick.com/5headnn" target="_blank" class="cta-btn">Start Ruining Games Now</a>
   </div>
 </section>
+
 <!-- STATS -->
 <div class="stats">
   <div class="stat">
@@ -921,14 +609,12 @@
           <div class="avatar-emoji">😤</div>
         </div>
         <div class="hours-badge">8,000+ HRS</div>
-        <div class="status-dot">● LIVE & BEAMING</div>
+        <div class="status-dot">● LIVE &amp; BEAMING</div>
       </div>
       <div class="fivehead-text">
         <h2 class="fivehead-name">5HEAD <span>NN</span></h2>
         <p class="fivehead-title">Chief Beaming Officer · Professional Menace · Never Banned · Never Detected</p>
-        <blockquote class="fivehead-quote">
-          "8,000 hours and not banned."
-        </blockquote>
+        <blockquote class="fivehead-quote">"8,000 hours and not banned."</blockquote>
         <div class="fivehead-stats">
           <div class="fstat">
             <span class="fstat-num">8,247</span>
@@ -986,9 +672,137 @@
 
 <div class="sheep-divider">🐑 🐑 🐑 🐑 🐑</div>
 
-</div><!-- end .content -->
+<!-- PRICING -->
+<section class="section">
+  <h2 class="section-title">Pricing Plans</h2>
+  <div class="pricing-grid">
 
-<!-- MATRIX RAIN SCRIPT -->
+    <div class="price-card">
+      <div class="price-tier">BROKE SHEEP</div>
+      <div class="price-amount">$9<span style="font-size:1rem">.99</span></div>
+      <div class="price-period">/ month (use #SHITTER for 50% off)</div>
+      <ul class="price-features">
+        <li>Aimbot (slightly janky)</li>
+        <li>Basic ESP (blurry)</li>
+        <li>No Recoil (kinda)</li>
+        <li>1 activation</li>
+        <li>Sheep Mode ✅</li>
+        <li>"We try our best" support</li>
+      </ul>
+      <button class="buy-btn" onclick="window.open('https://kick.com/5headnn','_blank')">GET REKT</button>
+    </div>
+
+    <div class="price-card featured">
+      <div class="featured-badge">★ MOST POPULAR ★</div>
+      <div class="price-tier">EVIL SHEEP</div>
+      <div class="price-amount">$24<span style="font-size:1rem">.99</span></div>
+      <div class="price-period">/ month (use #SHITTER for 50% off)</div>
+      <ul class="price-features">
+        <li>Aimbot (very crispy)</li>
+        <li>Full ESP + Loot ESP</li>
+        <li>No Recoil (perfect)</li>
+        <li>Speed Hack + Silent Aim</li>
+        <li>3 activations</li>
+        <li>Sheep Mode ✅ (HD)</li>
+        <li>Priority Discord ping</li>
+      </ul>
+      <button class="buy-btn" onclick="window.open('https://kick.com/5headnn','_blank')">BECOME EVIL</button>
+    </div>
+
+    <div class="price-card">
+      <div class="price-tier">DEMON SHEEP</div>
+      <div class="price-amount">$49<span style="font-size:1rem">.99</span></div>
+      <div class="price-period">/ month (use #SHITTER for 50% off)</div>
+      <ul class="price-features">
+        <li>Everything in Evil Sheep</li>
+        <li>Triggerbot + Spinbot</li>
+        <li>Unlimited activations</li>
+        <li>Ban insurance*</li>
+        <li>Sheep Mode ✅ (4K Ultra)</li>
+        <li>"We'll cry with you" support</li>
+        <li>Free therapy referral**</li>
+      </ul>
+      <button class="buy-btn" onclick="window.open('https://kick.com/5headnn','_blank')">SELL SOUL</button>
+    </div>
+
+  </div>
+  <p style="text-align:center; font-size:0.65rem; color:#2a4a2a; margin-top:20px;">*Ban insurance = we say "lol unlucky" in Discord. **Referral is a meme. Please actually go to therapy.</p>
+</section>
+
+<!-- REVIEWS -->
+<section class="section">
+  <h2 class="section-title">Customer Reviews</h2>
+  <div class="reviews-grid">
+
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"As a gamer girl, I casually obliterated every boy's ego using EvilSheep.io while they blamed 'lag' and 'broken hitboxes.' They'll never know it wasn't skill… it was sheep-powered villainy. RIP to the fallen."</p>
+      <div class="review-author"><span>__LadyLoz__</span> · Verified Buyer · Ego Destroyer</div>
+    </div>
+
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"I downloaded this on a Tuesday. By Wednesday I had a 47 kill streak. By Thursday my whole lobby had left the server and filed emotional damage complaints. I have never felt more powerful or more alone. Five stars."</p>
+      <div class="review-author"><span>xXFragg0dXx</span> · Verified Buyer · Rank: Global Menace</div>
+    </div>
+
+    <div class="review-card">
+      <div class="review-stars">★★★★☆</div>
+      <p class="review-text">"I'm a Sheep and So Are My Victims. I bought EvilSheep because I was tired of getting beamed by nakeds. Now I am the guy beaming people from 200m with zero recoil. It's beautiful. Aimbot? Spot on. No recoil? Like shooting a laser. Sheep Mode? I'm now a woolly menace ruining games and confusing enemies. Some lag, but at least I'm undetected (for now). Support? Just pray to the Sheep Gods. Worth it? Absolutely. But maybe don't stream while using it. You'll get banned faster than you can say 'baa.'"</p>
+      <div class="review-author"><span>Kris</span> · Verified Buyer · Woolly Menace</div>
+    </div>
+
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Best place for god tier legit cheats. Spare no one with the power of EvilSheep.io. GG. 1v20 me bro."</p>
+      <div class="review-author"><span>Dabz</span> · Verified Buyer · 1v20 Certified</div>
+    </div>
+
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"10/10 best cheat of 2026."</p>
+      <div class="review-author"><span>__sayo__</span> · Verified Buyer</div>
+    </div>
+
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"I bought my scripts from evil sheep.io. I went from bronze-boomer to emerald-ender."</p>
+      <div class="review-author"><span>HideOnCheese</span> · Verified Buyer</div>
+    </div>
+
+    <div class="review-card">
+      <div class="review-stars">★★★☆☆</div>
+      <p class="review-text">"Look, I accidentally had EvilSheep active while live on stream and my whole chat just said 'L' simultaneously. Otherwise undetected for 3 weeks. The sheep mode specifically is an 11/10 feature."</p>
+      <div class="review-author"><span>TwitchStreamerWhoShouldKnowBetter</span> · Verified Buyer</div>
+    </div>
+
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"I used to be bad at Rust. Now I am merely cheating at Rust. These are very different things and I feel the second one is better. I built a 6x6 in 20 minutes. My base has 400 turrets. I have no friends on this server. Five stars."</p>
+      <div class="review-author"><span>BasedBuilderman</span> · Verified Buyer · Server Celebrity (hated)</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- DISCLAIMER -->
+<div class="disclaimer">
+  <p>* "99.1% undetected" based on a poll of 11 of our friends. Two of them lied.</p>
+  <p>** EvilSheep.io is a satirical/parody website. This is entirely fictional and for entertainment purposes. We do not actually sell cheats, we do not condone cheating in games, and no sheep were harmed in the making of this website.</p>
+  <p>*** Use of code #SHITTER is entirely fake. There is nothing to purchase. Go touch grass.</p>
+  <p>🐑 EvilSheep.io — Proudly ruining fictional gamers' days since never.</p>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 EvilSheep.io — All rights reserved, including the right to laugh at you |
+  <a href="#">Terms</a> · <a href="#">Privacy</a> · <a href="#">Refund Policy</a> (lol) · <a href="#">Discord</a>
+  </p>
+</footer>
+
+</div>
+
+<!-- MATRIX RAIN -->
 <script>
 const canvas = document.getElementById('matrix');
 const ctx = canvas.getContext('2d');
@@ -1015,11 +829,10 @@ window.addEventListener('resize', () => {
 });
 </script>
 
-<!-- 🎧 UNMUTE SOUND SCRIPT -->
+<!-- UNMUTE -->
 <script>
 const video = document.getElementById('heroVideo');
 const btn = document.getElementById('unmuteBtn');
-
 btn.addEventListener('click', () => {
   video.muted = false;
   video.volume = 1;
